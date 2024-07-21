@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\bin\Debug\net8.0\WorkingWithText.exe
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\bin\Debug\net8.0\WorkingWithText.deps.json
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\bin\Debug\net8.0\WorkingWithText.runtimeconfig.json
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\bin\Debug\net8.0\WorkingWithText.dll
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\bin\Debug\net8.0\WorkingWithText.pdb
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.AssemblyInfo.cs
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.sourcelink.json
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.dll
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\refint\WorkingWithText.dll
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.pdb
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\WorkingWithText.genruntimeconfig.cache
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithText\obj\Debug\net8.0\ref\WorkingWithText.dll

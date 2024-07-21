@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59164F43-DA34-4E92-A0B5-FFD0FF0D8CED}|WorkingWithNumbers\\WorkingWithNumbers.csproj|c:\\users\\user\\desktop\\.net projects\\chapter08\\workingwithnumbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59164F43-DA34-4E92-A0B5-FFD0FF0D8CED}|WorkingWithNumbers\\WorkingWithNumbers.csproj|solutionrelative:workingwithnumbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithText\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithText\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59164F43-DA34-4E92-A0B5-FFD0FF0D8CED}|WorkingWithNumbers\\WorkingWithNumbers.csproj|c:\\users\\user\\desktop\\.net projects\\chapter08\\workingwithnumbers\\workingwithnumbers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{59164F43-DA34-4E92-A0B5-FFD0FF0D8CED}|WorkingWithNumbers\\WorkingWithNumbers.csproj|solutionrelative:workingwithnumbers\\workingwithnumbers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithNumbers\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WorkingWithNumbers.csproj",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj",
-              "RelativeDocumentMoniker": "WorkingWithNumbers\\WorkingWithNumbers.csproj",
-              "ToolTip": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj",
-              "RelativeToolTip": "WorkingWithNumbers\\WorkingWithNumbers.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-20T19:30:24.753Z"
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\Program.cs",
+              "RelativeDocumentMoniker": "WorkingWithNumbers\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\Program.cs",
+              "RelativeToolTip": "WorkingWithNumbers\\Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T21:52:31.782Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\Program.cs",
-              "RelativeDocumentMoniker": "WorkingWithNumbers\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\Program.cs",
-              "RelativeToolTip": "WorkingWithNumbers\\Program.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAADAAAAAiAAAA",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithText\\Program.cs",
+              "RelativeDocumentMoniker": "WorkingWithText\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithText\\Program.cs",
+              "RelativeToolTip": "WorkingWithText\\Program.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAC0AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T19:29:21.908Z",
+              "WhenOpened": "2024-07-20T21:52:08.827Z",
               "EditorCaption": ""
             }
           ]
