@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj": {}
+    "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj": {
+    "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj",
         "projectName": "WorkingWithNumbers",
-        "projectPath": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\WorkingWithNumbers.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\.Net Projects\\chapter08\\WorkingWithNumbers\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

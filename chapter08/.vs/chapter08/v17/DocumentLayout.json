@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithText\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithText\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.Regexs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithRegularExpressions\\Program.Regexs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithNumbers\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.Strings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithRegularExpressions\\Program.Strings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\WorkingWithRegularExpressions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithRegularExpressions\\WorkingWithRegularExpressions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingWithRegularExpressions\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,29 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\Program.cs",
-              "RelativeDocumentMoniker": "WorkingWithNumbers\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithNumbers\\Program.cs",
-              "RelativeToolTip": "WorkingWithNumbers\\Program.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Program.Regexs.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.Regexs.cs",
+              "RelativeDocumentMoniker": "WorkingWithRegularExpressions\\Program.Regexs.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.Regexs.cs",
+              "RelativeToolTip": "WorkingWithRegularExpressions\\Program.Regexs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T21:52:31.782Z",
+              "WhenOpened": "2024-07-28T07:59:27.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithText\\Program.cs",
-              "RelativeDocumentMoniker": "WorkingWithText\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\.Net Projects\\CSharpTutorials\\chapter08\\WorkingWithText\\Program.cs",
-              "RelativeToolTip": "WorkingWithText\\Program.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAAAC0AAAAdAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.Strings.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.Strings.cs",
+              "RelativeDocumentMoniker": "WorkingWithRegularExpressions\\Program.Strings.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.Strings.cs",
+              "RelativeToolTip": "WorkingWithRegularExpressions\\Program.Strings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T21:52:08.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T16:20:43.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkingWithRegularExpressions.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\WorkingWithRegularExpressions.csproj",
+              "RelativeDocumentMoniker": "WorkingWithRegularExpressions\\WorkingWithRegularExpressions.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\WorkingWithRegularExpressions.csproj",
+              "RelativeToolTip": "WorkingWithRegularExpressions\\WorkingWithRegularExpressions.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-21T14:25:34.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.cs",
+              "RelativeDocumentMoniker": "WorkingWithRegularExpressions\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\.Net_Projects\\CSharpTutorials\\chapter08\\WorkingWithRegularExpressions\\Program.cs",
+              "RelativeToolTip": "WorkingWithRegularExpressions\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T14:22:27.983Z"
             }
           ]
         }

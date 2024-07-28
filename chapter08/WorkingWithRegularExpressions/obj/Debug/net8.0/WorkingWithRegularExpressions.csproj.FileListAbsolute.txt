@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\bin\Debug\net8.0\WorkingWithRegularExpressions.exe
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\bin\Debug\net8.0\WorkingWithRegularExpressions.deps.json
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\bin\Debug\net8.0\WorkingWithRegularExpressions.runtimeconfig.json
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\bin\Debug\net8.0\WorkingWithRegularExpressions.dll
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\bin\Debug\net8.0\WorkingWithRegularExpressions.pdb
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.AssemblyInfo.cs
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.sourcelink.json
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.dll
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\refint\WorkingWithRegularExpressions.dll
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.pdb
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\WorkingWithRegularExpressions.genruntimeconfig.cache
+C:\Users\user\Desktop\.Net Projects\CSharpTutorials\chapter08\WorkingWithRegularExpressions\obj\Debug\net8.0\ref\WorkingWithRegularExpressions.dll

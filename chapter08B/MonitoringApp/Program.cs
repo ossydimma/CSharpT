@@ -11,6 +11,7 @@
 //Thread.Sleep(new Random().Next(5, 10) * 1000);
 //Recorder.Stop();
 
+
 // Trying String and StringBuilder
 
 int[] numbers = Enumerable.Range(start: 1, count: 50_000).ToArray();
