@@ -1,5 +1,7 @@
 ﻿// Define an alias for a dictionary with string key and string value.
 using StringDictionary = System.Collections.Generic.Dictionary<string, string>;
+using System.Collections.Frozen; // To use FrozenDictionary<T, T>.
+
 WriteLine("-------------------- DICTIONARY -------------------");
 
 // Declare a dictionary without the alias.
@@ -43,6 +45,17 @@ foreach (KeyValuePair<string, string> item in keywords)
 // Look up a value using a key.
 string key = "long";
 WriteLine($"The definition of {key} is {keywords[key]}.");
+
+WWriteLine("------------FROZEN DICTIONARY--------------")
+// Creating a frozen collection has an overhead to perform the
+// sometimes complex optimizations.
+FrozenDictionary<string, string> frozenKeywords = keywords.ToFrozenDictionary();
+
+OutputCollection("Frozen keywords dictionary", frozenKeywords);
+
+// Lookups are faster in a frozen dictionary.
+WriteLine($"Define long: {frozenKeywords["long"]}");
+
 
 
 

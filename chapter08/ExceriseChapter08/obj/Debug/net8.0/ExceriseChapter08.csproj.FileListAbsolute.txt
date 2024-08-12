@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\bin\Debug\net8.0\ExceriseChapter08.exe
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\bin\Debug\net8.0\ExceriseChapter08.deps.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\bin\Debug\net8.0\ExceriseChapter08.runtimeconfig.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\bin\Debug\net8.0\ExceriseChapter08.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\bin\Debug\net8.0\ExceriseChapter08.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.AssemblyInfo.cs
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.sourcelink.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\refint\ExceriseChapter08.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ExceriseChapter08.genruntimeconfig.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter08\ExceriseChapter08\obj\Debug\net8.0\ref\ExceriseChapter08.dll

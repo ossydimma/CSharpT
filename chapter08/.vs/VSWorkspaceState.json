@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WorkingWithNumbers",
-    "\\WorkingWithText"
+    "\\ExceriseChapter08",
+    "\\WorkingWithRegularExpressions"
   ],
+  "SelectedNode": "\\WorkingWithRegularExpressions\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
