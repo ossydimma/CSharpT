@@ -135,23 +135,5 @@ WriteLine($" Contains {info.Length} bytes.");
 WriteLine($" Last accessed: {info.LastAccessTime}");
 WriteLine($" Has readonly set to {info.IsReadOnly}.");
 
-string locate = "C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\chapter09";
 
-//File.WriteAllText(locate, ".vs/");
-//string ignore = Combine("C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\chapter09", ".gitignore");
-
-//WriteLine($"Does it exist? {File.Exists(ignore)}");
-
-//StreamWriter vsWriter = File.CreateText(textFile);
-//vsWriter.WriteLine(".vs/");
-//vsWriter.Close();
-
-
-string path = "example.txt";
-string newLine = ".vs/";
-
-using (StreamWriter writer = new(locate, true))
-{
-    writer.WriteLine(newLine);
-}
 #endregion

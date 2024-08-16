@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\bin\Debug\net8.0\WorkingWithStreams.exe
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\bin\Debug\net8.0\WorkingWithStreams.deps.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\bin\Debug\net8.0\WorkingWithStreams.runtimeconfig.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\bin\Debug\net8.0\WorkingWithStreams.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\bin\Debug\net8.0\WorkingWithStreams.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.AssemblyInfo.cs
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.sourcelink.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\refint\WorkingWithStreams.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\WorkingWithStreams.genruntimeconfig.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithStreams\obj\Debug\net8.0\ref\WorkingWithStreams.dll
