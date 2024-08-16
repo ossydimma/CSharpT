@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\bin\Debug\net8.0\WorkingWithEncoding.exe
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\bin\Debug\net8.0\WorkingWithEncoding.deps.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\bin\Debug\net8.0\WorkingWithEncoding.runtimeconfig.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\bin\Debug\net8.0\WorkingWithEncoding.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\bin\Debug\net8.0\WorkingWithEncoding.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.AssemblyInfo.cs
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.sourcelink.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\refint\WorkingWithEncoding.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\WorkingWithEncoding.genruntimeconfig.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter09\WorkingWithEncoding\obj\Debug\net8.0\ref\WorkingWithEncoding.dll

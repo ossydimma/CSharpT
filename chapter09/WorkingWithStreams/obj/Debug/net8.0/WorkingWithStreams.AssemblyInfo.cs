@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkingWithStreams")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+443cfef869c723d3f9ef079a973c25613127d86b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0825afbbfd8fba877d2a2f6b44910c3cca802f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkingWithStreams")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkingWithStreams")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
