@@ -5,11 +5,13 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFileSystems", "WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{620F7511-3C22-4521-9B55-12B92CB55D1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStreams", "WorkingWithStreams\WorkingWithStreams.csproj", "{9E362C01-67E8-4EB1-8B5D-B15A6A3E5234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithStreams", "WorkingWithStreams\WorkingWithStreams.csproj", "{9E362C01-67E8-4EB1-8B5D-B15A6A3E5234}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEncoding", "WorkingWithEncoding\WorkingWithEncoding.csproj", "{97F2CF8F-27CE-440E-9A87-6F45BB4C359F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEncoding", "WorkingWithEncoding\WorkingWithEncoding.csproj", "{97F2CF8F-27CE-440E-9A87-6F45BB4C359F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithSerializiation", "WorkingWithSerializiation\WorkingWithSerializiation.csproj", "{31901BAF-DF50-4D97-91AA-62E66FF2FD30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithSerializiation", "WorkingWithSerializiation\WorkingWithSerializiation.csproj", "{31901BAF-DF50-4D97-91AA-62E66FF2FD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEnvVars", "WorkingWithEnvVars\WorkingWithEnvVars.csproj", "{BBDF6D31-188F-47D3-A98A-A96D3AE13832}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{31901BAF-DF50-4D97-91AA-62E66FF2FD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31901BAF-DF50-4D97-91AA-62E66FF2FD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31901BAF-DF50-4D97-91AA-62E66FF2FD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

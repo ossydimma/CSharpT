@@ -125,9 +125,9 @@ Book Csharp = new("C# 12 and .NET 8 - Modern Cross-Platform Development Fundamen
 JsonSerializerOptions options = new()
 {
     IncludeFields = true,
-    //PropertyNameCaseInsensitive = true,
-    //WriteIndented = true,
-    //PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+    PropertyNameCaseInsensitive = true,
+    WriteIndented = true,
+    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
 };
 
 string controlPath = Combine(CurrentDirectory, "Book.json");

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "C+GryOxM1R6+E1XHUWwJHyqaQ1Facf/6goKKrsBPRacvDfucAIEY1heU3KT16WmvIWUum0DvgJPMt7Y2ibxKXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\chapter09\\WorkingWithEnvVars\\WorkingWithEnvVars.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\spectre.console\\0.47.0\\spectre.console.0.47.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
