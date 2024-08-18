@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithSerializiation",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEnvVars", "WorkingWithEnvVars\WorkingWithEnvVars.csproj", "{BBDF6D31-188F-47D3-A98A-A96D3AE13832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch09Ex02SerializingShapes", "Ch09Ex02SerializingShapes\Ch09Ex02SerializingShapes.csproj", "{90BF254C-4429-426E-9AE8-99D4B66E0D1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBDF6D31-188F-47D3-A98A-A96D3AE13832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BF254C-4429-426E-9AE8-99D4B66E0D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BF254C-4429-426E-9AE8-99D4B66E0D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BF254C-4429-426E-9AE8-99D4B66E0D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BF254C-4429-426E-9AE8-99D4B66E0D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

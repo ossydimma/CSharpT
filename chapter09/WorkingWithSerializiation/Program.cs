@@ -51,6 +51,7 @@ SectionTitle("Serialization as XMl");
 
 XmlSerializer xs = new(type: people.GetType());
 
+WriteLine($"xs : {xs}");
 
 // Create a file to write to.
 string path = Combine(CurrentDirectory, "people.xml");
