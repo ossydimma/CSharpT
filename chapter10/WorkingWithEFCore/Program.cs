@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Northwind.EntityModels; // To use Northwind
+
+using NorthwindDb db = new();
+WriteLine($"Provider: {db.Database.ProviderName}");
+//Disposes the database context
