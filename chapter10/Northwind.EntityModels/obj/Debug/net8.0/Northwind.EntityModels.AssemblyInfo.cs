@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Northwind.EntityModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66ec8c9d3784eceefbb8479cf54135a9ee3d3143")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7ec0a7940744c73b4f29b6bc795f205d728f0d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Northwind.EntityModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Northwind.EntityModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

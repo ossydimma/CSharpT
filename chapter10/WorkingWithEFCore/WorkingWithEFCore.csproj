@@ -24,6 +24,16 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Northwind.EntityModels\Northwind.EntityModels.csproj" />
 	</ItemGroup>
+	
+	<ItemGroup>
+		 <PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Design">
+			 <PrivateAssets>all</PrivateAssets>
+			 <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Sqlite" />
+</ItemGroup>
+
 
 
 </Project>
+
