@@ -134,7 +134,7 @@ partial class Program
 
         SectionTitle("Pattern matching with Like");
 
-        Write("Enter part of the product name");
+        Write("Enter part of the product name: ");
         string? input = ReadLine();
 
         if(string.IsNullOrWhiteSpace(input))
@@ -156,6 +156,33 @@ partial class Program
         {
             WriteLine("{0} has {1} units in stock. Discontinued: {2}", p.ProductName, p.Stocks, p.Discontinued);
         }
+    }
+
+    private static void GettingRandomProduct()
+    {
+        using NorthwindDb db = new();
+
+        SectionTitle("Get a random product");
+
+        int? rowCount = db.Products?.Count();
+        if (rowCount is null)
+        {
+            Fail("Product table is Empty");
+            return;
+        }
+
+        //Product? product = db.Products?.FirstOrDefault(p => p.ProductId == (int) EF.Functions.Random() * rawCount);
+        Product? product = db.Products?.FirstOrDefault( p => p.ProductId == (int)(EF.Functions.Random() * rowCount));
+
+
+        if (product is null)
+        {
+            Fail("No product found");
+            return;
+        }
+
+        WriteLine($"Random Product : {product.ProductId} - {product.ProductName}");
+ 
     }
 }
 
