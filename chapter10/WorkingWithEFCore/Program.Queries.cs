@@ -171,7 +171,6 @@ partial class Program
             return;
         }
 
-        //Product? product = db.Products?.FirstOrDefault(p => p.ProductId == (int) EF.Functions.Random() * rawCount);
         Product? product = db.Products?.FirstOrDefault( p => p.ProductId == (int)(EF.Functions.Random() * rowCount));
 
 
