@@ -7,5 +7,6 @@
 ConfigureConsole();
 //QueryingCategories();
 FilteredIncludes();
+GettingOneProduct();
 //QueryingProducts();
 
