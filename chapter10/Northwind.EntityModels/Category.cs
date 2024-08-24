@@ -4,7 +4,7 @@ namespace Northwind.EntityModels;
 public class Category
 {
     //these properties map to columns in the database
-    public int CategoriesId { get; set; } //primary key
+    public int CategoryId { get; set; } //primary key
 
     public string CategoryName { get; set; } = null!;
 
