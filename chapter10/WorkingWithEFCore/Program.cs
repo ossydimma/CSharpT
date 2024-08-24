@@ -6,7 +6,7 @@
 
 ConfigureConsole();
 //QueryingCategories();
-FilteredIncludes();
-GettingOneProduct();
+//FilteredIncludes();
+//GettingOneProduct();
 //QueryingProducts();
-
+QueryingWithLike();

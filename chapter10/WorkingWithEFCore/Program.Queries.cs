@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore; // To use Include method
-using Northwind.EntityModels; // To use Northwind, category, product
+using Northwind.EntityModels;
+using System.Reflection.PortableExecutable; // To use Northwind, category, product
 partial class Program
 {
     private static void QueryingCategories()
@@ -102,6 +103,8 @@ partial class Program
     {
         using NorthwindDb db = new();
 
+        SectionTitle("Getting a single product");
+
         string? input;
         int id;
 
@@ -123,6 +126,36 @@ partial class Program
 
         Info($"Single:{product?.ProductName}");
         if (product is null) { Fail(" No Product not found using single"); }
+    }
+
+    private static void QueryingWithLike()
+    {
+        using NorthwindDb db = new();
+
+        SectionTitle("Pattern matching with Like");
+
+        Write("Enter part of the product name");
+        string? input = ReadLine();
+
+        if(string.IsNullOrWhiteSpace(input))
+        {
+            Fail("Fail to enter part of the product");
+            return;
+        }
+
+        IQueryable<Product>? product = db.Products?
+            .Where(p => EF.Functions.Like(p.ProductName, $"%{input}%"));
+
+        if (product is null || !product.Any())
+        {
+            Fail("No product found");
+            return;
+        }
+
+        foreach(Product p in  product)
+        {
+            WriteLine("{0} has {1} units in stock. Discontinued: {2}", p.ProductName, p.Stocks, p.Discontinued);
+        }
     }
 }
 
