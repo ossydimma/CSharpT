@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore; // To use Include method
-using Northwind.EntityModels;
-using System.Reflection.PortableExecutable; // To use Northwind, category, product
+using Microsoft.EntityFrameworkCore.ChangeTracking; // To use CollectionEntry
+using Northwind.EntityModels; // To use Northwind, category, product
+
 partial class Program
 {
     private static void QueryingCategories()
@@ -10,8 +11,29 @@ partial class Program
         SectionTitle("Categories and how many products they have");
 
         //Quarying to get all categories and their related products
-        IQueryable<Category>? categories = db.categories?
-            .Include(c => c.Products);
+        IQueryable<Category>? categories;
+        //= db.categories 
+        //.Include(c => c.Products);
+
+        db.ChangeTracker.LazyLoadingEnabled = false;
+
+        Write("Enable eager loading? (Y/N): ");
+        bool eagerLoading = (ReadKey().Key == ConsoleKey.Y);
+        bool explicitLoading = false;
+        WriteLine();
+
+        if (eagerLoading)
+        {
+            categories = db.categories?
+                .Include(c => c.Products);
+        }
+        else
+        {
+            categories = db.categories;
+            Write("Enable explicit loading? (Y/N): ");
+            explicitLoading = (ReadKey().Key == ConsoleKey.Y);
+            WriteLine();
+        }
 
         if (categories is null || !categories.Any())
         {
@@ -22,6 +44,21 @@ partial class Program
         // Execute query and enumerate results.
         foreach (Category c in categories)
         {
+            if(explicitLoading)
+            {
+                Write($" Explicitly load products for {c.CategoryName}? (Y?N): ");
+                ConsoleKeyInfo key = ReadKey();
+                WriteLine();
+
+                if (key.Key == ConsoleKey.Y)
+                {
+                    CollectionEntry<Category, Product> products = db.Entry(c)
+                        .Collection(c2 => c2.Products);
+                    
+                    if(!products.IsLoaded) products.Load();
+                }
+            }
+
             WriteLine($"{c.CategoryName} has {c.Products.Count} products.");
         }
     }

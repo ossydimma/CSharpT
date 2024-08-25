@@ -5,9 +5,9 @@
 //Disposes the database context
 
 ConfigureConsole();
-//QueryingCategories();
+QueryingCategories();
 //FilteredIncludes();
 //GettingOneProduct();
 //QueryingProducts();
-QueryingWithLike();
+//QueryingWithLike();
 //GettingRandomProduct();

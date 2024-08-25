@@ -18,6 +18,7 @@ public class NorthwindDb : DbContext
         string connectionString = $" Data Source={path}";
         WriteLine(connectionString);
         optionsBuilder.UseSqlite(connectionString);
+        optionsBuilder.UseLazyLoadingProxies();
 
         optionsBuilder.LogTo(WriteLine, new[] {RelationalEventId.CommandExecuting}) // This is the Console method.
 

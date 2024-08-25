@@ -10,10 +10,6 @@
 	<ItemGroup>
 		<Using Include="System.Console" Static="true"/>
 	</ItemGroup>
-	
-	<ItemGroup>
-		<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Sqlite" />
-	</ItemGroup>
 
   <ItemGroup>
     <None Update="Northwind.db">
@@ -31,6 +27,7 @@
 			 <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Sqlite" />
+		<PackageReference Version="8.0.0" Include="Microsoft.EntityFrameworkCore.Proxies" />
 </ItemGroup>
 
 
