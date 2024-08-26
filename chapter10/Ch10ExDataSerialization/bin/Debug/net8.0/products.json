@@ -1,0 +1,500 @@
+[
+  {
+    "categoryId": 1,
+    "categoryName": "Beverages",
+    "description": "Soft drinks, coffees, teas, beers, and ales",
+    "products": [
+      {
+        "productId": 1,
+        "productName": "Chai",
+        "cost": 18,
+        "stocks": 39,
+        "discontinued": false,
+        "categoryId": 1,
+        "category": {
+          "categoryId": 1,
+          "categoryName": "Beverages",
+          "description": "Soft drinks, coffees, teas, beers, and ales",
+          "products": [
+            {
+              "productId": 1,
+              "productName": "Chai",
+              "cost": 18,
+              "stocks": 39,
+              "discontinued": false,
+              "categoryId": 1,
+              "category": {
+                "categoryId": 1,
+                "categoryName": "Beverages",
+                "description": "Soft drinks, coffees, teas, beers, and ales",
+                "products": [
+                  {
+                    "productId": 1,
+                    "productName": "Chai",
+                    "cost": 18,
+                    "stocks": 39,
+                    "discontinued": false,
+                    "categoryId": 1,
+                    "category": {
+                      "categoryId": 1,
+                      "categoryName": "Beverages",
+                      "description": "Soft drinks, coffees, teas, beers, and ales",
+                      "products": [
+                        {
+                          "productId": 1,
+                          "productName": "Chai",
+                          "cost": 18,
+                          "stocks": 39,
+                          "discontinued": false,
+                          "categoryId": 1,
+                          "category": {
+                            "categoryId": 1,
+                            "categoryName": "Beverages",
+                            "description": "Soft drinks, coffees, teas, beers, and ales",
+                            "products": [
+                              {
+                                "productId": 1,
+                                "productName": "Chai",
+                                "cost": 18,
+                                "stocks": 39,
+                                "discontinued": false,
+                                "categoryId": 1,
+                                "category": {
+                                  "categoryId": 1,
+                                  "categoryName": "Beverages",
+                                  "description": "Soft drinks, coffees, teas, beers, and ales",
+                                  "products": [
+                                    {
+                                      "productId": 1,
+                                      "productName": "Chai",
+                                      "cost": 18,
+                                      "stocks": 39,
+                                      "discontinued": false,
+                                      "categoryId": 1,
+                                      "category": {
+                                        "categoryId": 1,
+                                        "categoryName": "Beverages",
+                                        "description": "Soft drinks, coffees, teas, beers, and ales",
+                                        "products": [
+                                          {
+                                            "productId": 1,
+                                            "productName": "Chai",
+                                            "cost": 18,
+                                            "stocks": 39,
+                                            "discontinued": false,
+                                            "categoryId": 1,
+                                            "category": {
+                                              "categoryId": 1,
+                                              "categoryName": "Beverages",
+                                              "description": "Soft drinks, coffees, teas, beers, and ales",
+                                              "products": [
+                                                {
+                                                  "productId": 1,
+                                                  "productName": "Chai",
+                                                  "cost": 18,
+                                                  "stocks": 39,
+                                                  "discontinued": false,
+                                                  "categoryId": 1,
+                                                  "category": {
+                                                    "categoryId": 1,
+                                                    "categoryName": "Beverages",
+                                                    "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                    "products": [
+                                                      {
+                                                        "productId": 1,
+                                                        "productName": "Chai",
+                                                        "cost": 18,
+                                                        "stocks": 39,
+                                                        "discontinued": false,
+                                                        "categoryId": 1,
+                                                        "category": {
+                                                          "categoryId": 1,
+                                                          "categoryName": "Beverages",
+                                                          "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                          "products": [
+                                                            {
+                                                              "productId": 1,
+                                                              "productName": "Chai",
+                                                              "cost": 18,
+                                                              "stocks": 39,
+                                                              "discontinued": false,
+                                                              "categoryId": 1,
+                                                              "category": {
+                                                                "categoryId": 1,
+                                                                "categoryName": "Beverages",
+                                                                "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                "products": [
+                                                                  {
+                                                                    "productId": 1,
+                                                                    "productName": "Chai",
+                                                                    "cost": 18,
+                                                                    "stocks": 39,
+                                                                    "discontinued": false,
+                                                                    "categoryId": 1,
+                                                                    "category": {
+                                                                      "categoryId": 1,
+                                                                      "categoryName": "Beverages",
+                                                                      "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                      "products": [
+                                                                        {
+                                                                          "productId": 1,
+                                                                          "productName": "Chai",
+                                                                          "cost": 18,
+                                                                          "stocks": 39,
+                                                                          "discontinued": false,
+                                                                          "categoryId": 1,
+                                                                          "category": {
+                                                                            "categoryId": 1,
+                                                                            "categoryName": "Beverages",
+                                                                            "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                            "products": [
+                                                                              {
+                                                                                "productId": 1,
+                                                                                "productName": "Chai",
+                                                                                "cost": 18,
+                                                                                "stocks": 39,
+                                                                                "discontinued": false,
+                                                                                "categoryId": 1,
+                                                                                "category": {
+                                                                                  "categoryId": 1,
+                                                                                  "categoryName": "Beverages",
+                                                                                  "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                  "products": [
+                                                                                    {
+                                                                                      "productId": 1,
+                                                                                      "productName": "Chai",
+                                                                                      "cost": 18,
+                                                                                      "stocks": 39,
+                                                                                      "discontinued": false,
+                                                                                      "categoryId": 1,
+                                                                                      "category": {
+                                                                                        "categoryId": 1,
+                                                                                        "categoryName": "Beverages",
+                                                                                        "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                        "products": [
+                                                                                          {
+                                                                                            "productId": 1,
+                                                                                            "productName": "Chai",
+                                                                                            "cost": 18,
+                                                                                            "stocks": 39,
+                                                                                            "discontinued": false,
+                                                                                            "categoryId": 1,
+                                                                                            "category": {
+                                                                                              "categoryId": 1,
+                                                                                              "categoryName": "Beverages",
+                                                                                              "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                              "products": [
+                                                                                                {
+                                                                                                  "productId": 1,
+                                                                                                  "productName": "Chai",
+                                                                                                  "cost": 18,
+                                                                                                  "stocks": 39,
+                                                                                                  "discontinued": false,
+                                                                                                  "categoryId": 1,
+                                                                                                  "category": {
+                                                                                                    "categoryId": 1,
+                                                                                                    "categoryName": "Beverages",
+                                                                                                    "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                    "products": [
+                                                                                                      {
+                                                                                                        "productId": 1,
+                                                                                                        "productName": "Chai",
+                                                                                                        "cost": 18,
+                                                                                                        "stocks": 39,
+                                                                                                        "discontinued": false,
+                                                                                                        "categoryId": 1,
+                                                                                                        "category": {
+                                                                                                          "categoryId": 1,
+                                                                                                          "categoryName": "Beverages",
+                                                                                                          "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                          "products": [
+                                                                                                            {
+                                                                                                              "productId": 1,
+                                                                                                              "productName": "Chai",
+                                                                                                              "cost": 18,
+                                                                                                              "stocks": 39,
+                                                                                                              "discontinued": false,
+                                                                                                              "categoryId": 1,
+                                                                                                              "category": {
+                                                                                                                "categoryId": 1,
+                                                                                                                "categoryName": "Beverages",
+                                                                                                                "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                "products": [
+                                                                                                                  {
+                                                                                                                    "productId": 1,
+                                                                                                                    "productName": "Chai",
+                                                                                                                    "cost": 18,
+                                                                                                                    "stocks": 39,
+                                                                                                                    "discontinued": false,
+                                                                                                                    "categoryId": 1,
+                                                                                                                    "category": {
+                                                                                                                      "categoryId": 1,
+                                                                                                                      "categoryName": "Beverages",
+                                                                                                                      "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                      "products": [
+                                                                                                                        {
+                                                                                                                          "productId": 1,
+                                                                                                                          "productName": "Chai",
+                                                                                                                          "cost": 18,
+                                                                                                                          "stocks": 39,
+                                                                                                                          "discontinued": false,
+                                                                                                                          "categoryId": 1,
+                                                                                                                          "category": {
+                                                                                                                            "categoryId": 1,
+                                                                                                                            "categoryName": "Beverages",
+                                                                                                                            "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                            "products": [
+                                                                                                                              {
+                                                                                                                                "productId": 1,
+                                                                                                                                "productName": "Chai",
+                                                                                                                                "cost": 18,
+                                                                                                                                "stocks": 39,
+                                                                                                                                "discontinued": false,
+                                                                                                                                "categoryId": 1,
+                                                                                                                                "category": {
+                                                                                                                                  "categoryId": 1,
+                                                                                                                                  "categoryName": "Beverages",
+                                                                                                                                  "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                  "products": [
+                                                                                                                                    {
+                                                                                                                                      "productId": 1,
+                                                                                                                                      "productName": "Chai",
+                                                                                                                                      "cost": 18,
+                                                                                                                                      "stocks": 39,
+                                                                                                                                      "discontinued": false,
+                                                                                                                                      "categoryId": 1,
+                                                                                                                                      "category": {
+                                                                                                                                        "categoryId": 1,
+                                                                                                                                        "categoryName": "Beverages",
+                                                                                                                                        "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                        "products": [
+                                                                                                                                          {
+                                                                                                                                            "productId": 1,
+                                                                                                                                            "productName": "Chai",
+                                                                                                                                            "cost": 18,
+                                                                                                                                            "stocks": 39,
+                                                                                                                                            "discontinued": false,
+                                                                                                                                            "categoryId": 1,
+                                                                                                                                            "category": {
+                                                                                                                                              "categoryId": 1,
+                                                                                                                                              "categoryName": "Beverages",
+                                                                                                                                              "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                              "products": [
+                                                                                                                                                {
+                                                                                                                                                  "productId": 1,
+                                                                                                                                                  "productName": "Chai",
+                                                                                                                                                  "cost": 18,
+                                                                                                                                                  "stocks": 39,
+                                                                                                                                                  "discontinued": false,
+                                                                                                                                                  "categoryId": 1,
+                                                                                                                                                  "category": {
+                                                                                                                                                    "categoryId": 1,
+                                                                                                                                                    "categoryName": "Beverages",
+                                                                                                                                                    "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                    "products": [
+                                                                                                                                                      {
+                                                                                                                                                        "productId": 1,
+                                                                                                                                                        "productName": "Chai",
+                                                                                                                                                        "cost": 18,
+                                                                                                                                                        "stocks": 39,
+                                                                                                                                                        "discontinued": false,
+                                                                                                                                                        "categoryId": 1,
+                                                                                                                                                        "category": {
+                                                                                                                                                          "categoryId": 1,
+                                                                                                                                                          "categoryName": "Beverages",
+                                                                                                                                                          "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                          "products": [
+                                                                                                                                                            {
+                                                                                                                                                              "productId": 1,
+                                                                                                                                                              "productName": "Chai",
+                                                                                                                                                              "cost": 18,
+                                                                                                                                                              "stocks": 39,
+                                                                                                                                                              "discontinued": false,
+                                                                                                                                                              "categoryId": 1,
+                                                                                                                                                              "category": {
+                                                                                                                                                                "categoryId": 1,
+                                                                                                                                                                "categoryName": "Beverages",
+                                                                                                                                                                "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                "products": [
+                                                                                                                                                                  {
+                                                                                                                                                                    "productId": 1,
+                                                                                                                                                                    "productName": "Chai",
+                                                                                                                                                                    "cost": 18,
+                                                                                                                                                                    "stocks": 39,
+                                                                                                                                                                    "discontinued": false,
+                                                                                                                                                                    "categoryId": 1,
+                                                                                                                                                                    "category": {
+                                                                                                                                                                      "categoryId": 1,
+                                                                                                                                                                      "categoryName": "Beverages",
+                                                                                                                                                                      "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                      "products": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "productId": 1,
+                                                                                                                                                                          "productName": "Chai",
+                                                                                                                                                                          "cost": 18,
+                                                                                                                                                                          "stocks": 39,
+                                                                                                                                                                          "discontinued": false,
+                                                                                                                                                                          "categoryId": 1,
+                                                                                                                                                                          "category": {
+                                                                                                                                                                            "categoryId": 1,
+                                                                                                                                                                            "categoryName": "Beverages",
+                                                                                                                                                                            "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                            "products": [
+                                                                                                                                                                              {
+                                                                                                                                                                                "productId": 1,
+                                                                                                                                                                                "productName": "Chai",
+                                                                                                                                                                                "cost": 18,
+                                                                                                                                                                                "stocks": 39,
+                                                                                                                                                                                "discontinued": false,
+                                                                                                                                                                                "categoryId": 1,
+                                                                                                                                                                                "category": {
+                                                                                                                                                                                  "categoryId": 1,
+                                                                                                                                                                                  "categoryName": "Beverages",
+                                                                                                                                                                                  "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                  "products": [
+                                                                                                                                                                                    {
+                                                                                                                                                                                      "productId": 1,
+                                                                                                                                                                                      "productName": "Chai",
+                                                                                                                                                                                      "cost": 18,
+                                                                                                                                                                                      "stocks": 39,
+                                                                                                                                                                                      "discontinued": false,
+                                                                                                                                                                                      "categoryId": 1,
+                                                                                                                                                                                      "category": {
+                                                                                                                                                                                        "categoryId": 1,
+                                                                                                                                                                                        "categoryName": "Beverages",
+                                                                                                                                                                                        "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                        "products": [
+                                                                                                                                                                                          {
+                                                                                                                                                                                            "productId": 1,
+                                                                                                                                                                                            "productName": "Chai",
+                                                                                                                                                                                            "cost": 18,
+                                                                                                                                                                                            "stocks": 39,
+                                                                                                                                                                                            "discontinued": false,
+                                                                                                                                                                                            "categoryId": 1,
+                                                                                                                                                                                            "category": {
+                                                                                                                                                                                              "categoryId": 1,
+                                                                                                                                                                                              "categoryName": "Beverages",
+                                                                                                                                                                                              "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                              "products": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  "productId": 1,
+                                                                                                                                                                                                  "productName": "Chai",
+                                                                                                                                                                                                  "cost": 18,
+                                                                                                                                                                                                  "stocks": 39,
+                                                                                                                                                                                                  "discontinued": false,
+                                                                                                                                                                                                  "categoryId": 1,
+                                                                                                                                                                                                  "category": {
+                                                                                                                                                                                                    "categoryId": 1,
+                                                                                                                                                                                                    "categoryName": "Beverages",
+                                                                                                                                                                                                    "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                    "products": [
+                                                                                                                                                                                                      {
+                                                                                                                                                                                                        "productId": 1,
+                                                                                                                                                                                                        "productName": "Chai",
+                                                                                                                                                                                                        "cost": 18,
+                                                                                                                                                                                                        "stocks": 39,
+                                                                                                                                                                                                        "discontinued": false,
+                                                                                                                                                                                                        "categoryId": 1,
+                                                                                                                                                                                                        "category": {
+                                                                                                                                                                                                          "categoryId": 1,
+                                                                                                                                                                                                          "categoryName": "Beverages",
+                                                                                                                                                                                                          "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                          "products": [
+                                                                                                                                                                                                            {
+                                                                                                                                                                                                              "productId": 1,
+                                                                                                                                                                                                              "productName": "Chai",
+                                                                                                                                                                                                              "cost": 18,
+                                                                                                                                                                                                              "stocks": 39,
+                                                                                                                                                                                                              "discontinued": false,
+                                                                                                                                                                                                              "categoryId": 1,
+                                                                                                                                                                                                              "category": {
+                                                                                                                                                                                                                "categoryId": 1,
+                                                                                                                                                                                                                "categoryName": "Beverages",
+                                                                                                                                                                                                                "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                "products": [
+                                                                                                                                                                                                                  {
+                                                                                                                                                                                                                    "productId": 1,
+                                                                                                                                                                                                                    "productName": "Chai",
+                                                                                                                                                                                                                    "cost": 18,
+                                                                                                                                                                                                                    "stocks": 39,
+                                                                                                                                                                                                                    "discontinued": false,
+                                                                                                                                                                                                                    "categoryId": 1,
+                                                                                                                                                                                                                    "category": {
+                                                                                                                                                                                                                      "categoryId": 1,
+                                                                                                                                                                                                                      "categoryName": "Beverages",
+                                                                                                                                                                                                                      "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                      "products": [
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                          "productId": 1,
+                                                                                                                                                                                                                          "productName": "Chai",
+                                                                                                                                                                                                                          "cost": 18,
+                                                                                                                                                                                                                          "stocks": 39,
+                                                                                                                                                                                                                          "discontinued": false,
+                                                                                                                                                                                                                          "categoryId": 1,
+                                                                                                                                                                                                                          "category": {
+                                                                                                                                                                                                                            "categoryId": 1,
+                                                                                                                                                                                                                            "categoryName": "Beverages",
+                                                                                                                                                                                                                            "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                            "products": [
+                                                                                                                                                                                                                              {
+                                                                                                                                                                                                                                "productId": 1,
+                                                                                                                                                                                                                                "productName": "Chai",
+                                                                                                                                                                                                                                "cost": 18,
+                                                                                                                                                                                                                                "stocks": 39,
+                                                                                                                                                                                                                                "discontinued": false,
+                                                                                                                                                                                                                                "categoryId": 1,
+                                                                                                                                                                                                                                "category": {
+                                                                                                                                                                                                                                  "categoryId": 1,
+                                                                                                                                                                                                                                  "categoryName": "Beverages",
+                                                                                                                                                                                                                                  "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                                  "products": [
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                      "productId": 1,
+                                                                                                                                                                                                                                      "productName": "Chai",
+                                                                                                                                                                                                                                      "cost": 18,
+                                                                                                                                                                                                                                      "stocks": 39,
+                                                                                                                                                                                                                                      "discontinued": false,
+                                                                                                                                                                                                                                      "categoryId": 1,
+                                                                                                                                                                                                                                      "category": {
+                                                                                                                                                                                                                                        "categoryId": 1,
+                                                                                                                                                                                                                                        "categoryName": "Beverages",
+                                                                                                                                                                                                                                        "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                                        "products": [
+                                                                                                                                                                                                                                          {
+                                                                                                                                                                                                                                            "productId": 1,
+                                                                                                                                                                                                                                            "productName": "Chai",
+                                                                                                                                                                                                                                            "cost": 18,
+                                                                                                                                                                                                                                            "stocks": 39,
+                                                                                                                                                                                                                                            "discontinued": false,
+                                                                                                                                                                                                                                            "categoryId": 1,
+                                                                                                                                                                                                                                            "category": {
+                                                                                                                                                                                                                                              "categoryId": 1,
+                                                                                                                                                                                                                                              "categoryName": "Beverages",
+                                                                                                                                                                                                                                              "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                                              "products": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                  "productId": 1,
+                                                                                                                                                                                                                                                  "productName": "Chai",
+                                                                                                                                                                                                                                                  "cost": 18,
+                                                                                                                                                                                                                                                  "stocks": 39,
+                                                                                                                                                                                                                                                  "discontinued": false,
+                                                                                                                                                                                                                                                  "categoryId": 1,
+                                                                                                                                                                                                                                                  "category": {
+                                                                                                                                                                                                                                                    "categoryId": 1,
+                                                                                                                                                                                                                                                    "categoryName": "Beverages",
+                                                                                                                                                                                                                                                    "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                                                    "products": [
+                                                                                                                                                                                                                                                      {
+                                                                                                                                                                                                                                                        "productId": 1,
+                                                                                                                                                                                                                                                        "productName": "Chai",
+                                                                                                                                                                                                                                                        "cost": 18,
+                                                                                                                                                                                                                                                        "stocks": 39,
+                                                                                                                                                                                                                                                        "discontinued": false,
+                                                                                                                                                                                                                                                        "categoryId": 1,
+                                                                                                                                                                                                                                                        "category": {
+                                                                                                                                                                                                                                                          "categoryId": 1,
+                                                                                                                                                                                                                                                          "categoryName": "Beverages",
+                                                                                                                                                                                                                                                          "description": "Soft drinks, coffees, teas, beers, and ales",
+                                                                                                                                                                                                                                                          "products": [
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                              "productId": 1

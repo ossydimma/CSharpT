@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEFCore", "WorkingWithEFCore\WorkingWithEFCore.csproj", "{B92CDE4A-CD68-4CCC-8C13-93CE47FDCFC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.EntityModels", "Northwind.EntityModels\Northwind.EntityModels.csproj", "{D2B90D5C-72B1-4CDD-A5F3-FF5636B3CC3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.EntityModels", "Northwind.EntityModels\Northwind.EntityModels.csproj", "{D2B90D5C-72B1-4CDD-A5F3-FF5636B3CC3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch10ExDataSerialization", "Ch10ExDataSerialization\Ch10ExDataSerialization.csproj", "{775AA506-085A-4F19-B09B-3D59F69D7564}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D2B90D5C-72B1-4CDD-A5F3-FF5636B3CC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2B90D5C-72B1-4CDD-A5F3-FF5636B3CC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2B90D5C-72B1-4CDD-A5F3-FF5636B3CC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775AA506-085A-4F19-B09B-3D59F69D7564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775AA506-085A-4F19-B09B-3D59F69D7564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775AA506-085A-4F19-B09B-3D59F69D7564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775AA506-085A-4F19-B09B-3D59F69D7564}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

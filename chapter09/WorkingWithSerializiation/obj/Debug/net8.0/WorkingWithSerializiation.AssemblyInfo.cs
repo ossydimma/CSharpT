@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkingWithSerializiation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+084d226b8db5fcd2dd47fdebdb3d93b18a1dd9a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29522d733fe9832087139b9060782baf21fcef12")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkingWithSerializiation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkingWithSerializiation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
