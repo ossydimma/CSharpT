@@ -13,14 +13,14 @@ ConfigureConsole();
 //GettingRandomProduct();
 //LazyLoadingWithNoTracking();
 
-var resultAdd = AddProduct(categoryId: 6, productName: "Bob's Burger", price: 500M, stock: 72);
+//var resultAdd = AddProduct(categoryId: 6, productName: "Bob's Burger", price: 500M, stock: 72);
 
-if (resultAdd.affected == 1)
-{
-    WriteLine($"Add product successful with ID: {resultAdd.productId}.");
+//if (resultAdd.affected == 1)
+//{
+//    WriteLine($"Add product successful with ID: {resultAdd.productId}.");
 
-}
-ListProducts(productIdsToHighlight: new[] { resultAdd.productId });
+//}
+//ListProducts(productIdsToHighlight: new[] { resultAdd.productId });
 
 
 ////update entities
@@ -48,8 +48,23 @@ ListProducts(productIdsToHighlight: new[] { resultAdd.productId });
 //    WriteLine("Delete was canceled");
 //}
 
-var resultUpdateBetter = IncreaseProductPriceBetter("BOb", 20M);
+//updating using ExecuteUpdate
+//var resultUpdateBetter = IncreaseProductPriceBetter("BOb", 20M);
 
-if ( resultUpdateBetter.affected > 0) { WriteLine($"Increase product with {resultUpdateBetter.productId} ID price successful"); }
+//if ( resultUpdateBetter.affected > 0) { WriteLine($"Increase product with {resultUpdateBetter.productId} ID price successful"); }
 
-ListProducts(productIdsToHighlight: resultUpdateBetter.productId );
+//ListProducts(productIdsToHighlight: resultUpdateBetter.productId );
+
+//deleting entities
+WriteLine("About to delete all products whose name starts with Bob.");
+Write("Press Enter to continue or any other key to exit: ");
+
+if (ReadKey(intercept: true).Key == ConsoleKey.Enter)
+{
+    int deleted = DeleteProductBetter("Bob");
+    WriteLine($"{deleted} product(s) were deleted");
+}
+else
+{
+    WriteLine("Delete was canceled");
+}

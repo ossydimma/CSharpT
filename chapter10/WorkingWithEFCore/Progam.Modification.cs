@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore; //To use ExcuteUpdate, ExcuteDelete
 using Microsoft.EntityFrameworkCore.ChangeTracking; //To use EntityEntry<T>
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Northwind.EntityModels; // To use Northwind, product
 
 partial class Program
@@ -104,17 +102,18 @@ partial class Program
 
     }
 
-    //Updating entity using ExcutedUpdate method
+    //Updating entity using ExecutedUpdate method
     private static (int affected, int[]? productId) IncreaseProductPriceBetter( string productNameStartsWith, decimal amount)
     {
         using NorthwindDb db = new();
 
         if (db.Products is null) return (0, null);
 
-        IQueryable<Product> products = db.Products.Where(p => p.ProductName.StartsWith (productNameStartsWith));
+        IQueryable<Product>? products = db.Products
+            .Where(p => p.ProductName.StartsWith (productNameStartsWith));
 
         int affected = products.ExecuteUpdate(s => s.SetProperty(
-            p => p.Cost, //using lamba to get product cost
+            p => p.Cost, // using lamba expression to get product cost
             p => p.Cost + amount
             ));
 
@@ -122,6 +121,30 @@ partial class Program
 
         return (affected, productId);
     }
+
+    // deleting entity using ExecuteDelete
+    private static int DeleteProductBetter( string productNameStartsWith)
+    {
+        using NorthwindDb db = new();
+
+        int affected = 0;
+
+        IQueryable<Product>? products = db.Products?
+            .Where(p => p.ProductName.StartsWith (productNameStartsWith));
+
+        if (products is null || !products.Any())
+        {
+            Fail("No product found to be deleted");
+        }
+        else
+        {
+            affected = products.ExecuteDelete();
+        }
+
+        return affected;
+    }
+
+    
 
 
 }
