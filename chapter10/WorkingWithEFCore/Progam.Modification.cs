@@ -104,6 +104,25 @@ partial class Program
 
     }
 
+    //Updating entity using ExcutedUpdate method
+    private static (int affected, int[]? productId) IncreaseProductPriceBetter( string productNameStartsWith, decimal amount)
+    {
+        using NorthwindDb db = new();
+
+        if (db.Products is null) return (0, null);
+
+        IQueryable<Product> products = db.Products.Where(p => p.ProductName.StartsWith (productNameStartsWith));
+
+        int affected = products.ExecuteUpdate(s => s.SetProperty(
+            p => p.Cost, //using lamba to get product cost
+            p => p.Cost + amount
+            ));
+
+        int[] productId = products.Select(p => p.ProductId).ToArray();
+
+        return (affected, productId);
+    }
+
 
 }
 
