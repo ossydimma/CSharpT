@@ -10,3 +10,4 @@ C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\Northwind.Entity
 C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\Northwind.EntityModels\obj\Debug\net8.0\refint\Northwind.EntityModels.dll
 C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\Northwind.EntityModels\obj\Debug\net8.0\Northwind.EntityModels.pdb
 C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\Northwind.EntityModels\obj\Debug\net8.0\ref\Northwind.EntityModels.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\Northwind.EntityModels\obj\Debug\net8.0\Northwind.EntityModels.csproj.AssemblyReference.cache

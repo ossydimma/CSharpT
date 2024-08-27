@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema; // TO use [Column]
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization; // TO use [Column]
+using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute;
 
 namespace Northwind.EntityModels;
 public class Category
@@ -12,6 +14,8 @@ public class Category
     public string? Description { get; set; }
 
     // Defines a navigation property for related rows.
+
+    [JsonIgnore]
     public virtual ICollection<Product> Products { get; set; }
         // To enable developers to add products to a Category, we must
         // initialize the navigation property to an empty collection.

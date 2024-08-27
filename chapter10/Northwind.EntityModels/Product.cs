@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations; // To use [Requird]
-using System.ComponentModel.DataAnnotations.Schema; // To use [column]
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization; // To use [column]
 
 namespace Northwind.EntityModels;
 public class Product
@@ -20,7 +21,6 @@ public class Product
     public bool Discontinued { get; set; }
 
     //these two properties are foregin key relationship to category table
-
     public int CategoryId { get; set; }
     public virtual Category Category { get; set; } = null!;
 

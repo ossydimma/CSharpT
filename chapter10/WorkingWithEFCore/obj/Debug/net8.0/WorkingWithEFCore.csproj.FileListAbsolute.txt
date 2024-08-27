@@ -128,3 +128,4 @@ C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\WorkingWithEFCor
 C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\WorkingWithEFCore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\WorkingWithEFCore\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
 C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\WorkingWithEFCore\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\chapter10\WorkingWithEFCore\bin\Debug\net8.0\Newtonsoft.Json.dll

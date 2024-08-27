@@ -2,15 +2,12 @@
 using Northwind.EntityModels; // To use Northwind, product
 using System.Xml.Serialization; // To use XmlSerlizer
 using fastJson = System.Text.Json.JsonSerializer; // to use Json serialzer
-using System.Text.Json; // To use JsonSerializer.
+using System.Text.Json;
+using Newtonsoft.Json; // To use JsonSerializer.
 
 using NorthwindDb db = new();
 
-//if (db.categories is null )
-//{
-//    WriteLine("Product is null");
-//    return;
-//}
+
 
 IQueryable<Category>? categories = db.categories
     .Include(c => c.Products);
@@ -22,8 +19,17 @@ if (categories is null || !categories.Any())
 }
 WriteLine($" categories: {categories}");
 
+//var settings = new JsonSerializerSettings
+//{
+//    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+//};
+
+
+
+string jsonData = JsonConvert.SerializeObject(categories);
+
 // Serialize the data using JSON serialization
-string jsonData = Serialize(categories, "json");
+//string jsonData = Serialize(categories, "json");
 WriteLine($"JSON serialization size: {jsonData.Length} bytes");
 
 static string Serialize(IQueryable<Category> cate, string formate)
@@ -48,9 +54,8 @@ static string Serialize(IQueryable<Category> cate, string formate)
         {
             IncludeFields = true,
             PropertyNameCaseInsensitive = true,
-            WriteIndented = true,
+            WriteIndented = false,
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-            MaxDepth = 128
         };
 
         string jsonPath = Path.Combine(Environment.CurrentDirectory, "products.json");
@@ -68,8 +73,3 @@ static string Serialize(IQueryable<Category> cate, string formate)
 
 }
 
-//foreach(Category c in categories)
-//{
-//    WriteLine($"{c.CategoryName} has {c.Products.Count} products.");
-
-//}

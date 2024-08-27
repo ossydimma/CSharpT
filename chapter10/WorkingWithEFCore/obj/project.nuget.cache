@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "so+vsVNycNrVEDmH5+Lbe3lG256WvdfQSjv5/YHQ1BcJegwcpq9eaeS5LQLEMvaVx/mxk5D0LPSvfu/CNckjSg==",
+  "dgSpecHash": "UhK9D1NHoMhejA5P9v+uEzSMMIMJiRkLiBQGPhxPcE+wUmc19TdDmF/xSC/BCGGsAXcz6bst2dDjw4HrZ05NkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\chapter10\\WorkingWithEFCore\\WorkingWithEFCore.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
