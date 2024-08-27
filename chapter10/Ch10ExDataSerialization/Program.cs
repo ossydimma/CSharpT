@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Northwind.EntityModels; // To use Northwind, product
 using System.Xml.Serialization; // To use XmlSerlizer
-using fastJson = System.Text.Json.JsonSerializer; // to use Json serialzer
-using System.Text.Json;
-using Newtonsoft.Json; // To use JsonSerializer.
+//using System.Text.Json; // To use JsonSerializer.
+using Newtonsoft.Json;// To use JsonSerializer.
+using System.Runtime.Serialization.Formatters.Binary; 
 
 using NorthwindDb db = new();
 
@@ -17,20 +17,36 @@ if (categories is null || !categories.Any())
     WriteLine("No category found");
     return;
 }
-WriteLine($" categories: {categories}");
 
+
+//THIS IS A DIFFERENT ROUTE TO USE IN PLACE OF [JSONIGNORE] ATTRIBUTE IT GLOBALLY IGNORE CIRCULAR REFERENCE 
+// WHILE [JSONIGNORE] ATTRIBUTE  allows you to selectively ignore specific properties during serialization.
 //var settings = new JsonSerializerSettings
 //{
 //    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
 //};
 
+////Serialize the data using System.Text.Json JSON serialization 
+//string data = JsonSerializer.Serialize(categories);
+//WriteLine($"Fast JSON serialization size: {data.Length} bytes");
 
-
-string jsonData = JsonConvert.SerializeObject(categories);
-
-// Serialize the data using JSON serialization
-//string jsonData = Serialize(categories, "json");
+// Serialize the data using Newton JSON serialization
+string jsonData = JsonConvert.SerializeObject(categories); // used JsonConvert 
 WriteLine($"JSON serialization size: {jsonData.Length} bytes");
+
+//string xmlData = Serialize(categories, "xml");
+//WriteLine($"XML serialization size: {xmlData.Length} bytes");
+#pragma warning disable SYSLIB0011
+using (MemoryStream stream = new())
+{
+    BinaryFormatter formate = new();
+
+    formate.Serialize(stream, categories);
+    byte[] bytes = stream.ToArray();
+    WriteLine($"Binary serialization size: {bytes.Length} bytes");
+
+}
+#pragma warning restore SYSLIB0011
 
 static string Serialize(IQueryable<Category> cate, string formate)
 {
@@ -39,34 +55,17 @@ static string Serialize(IQueryable<Category> cate, string formate)
     if (formate == "xml")
     {
         XmlSerializer xs = new(type: cate.GetType());
+        
 
-        string path = Path.Combine(Environment.CurrentDirectory, "products.xml");
+        string path = "products.xml";
 
-        using (FileStream xmlstream = File.Create(path))
+        using (StreamWriter xmlStream = new(path) )
         {
-            xs.Serialize(xmlstream, cate);
-            serializedData = xmlstream.ToString()!;
+            xs.Serialize(xmlStream, cate);
+            serializedData = xmlStream.ToString()!;
         };
     }
-    else if (formate == "json")
-    {
-        JsonSerializerOptions options = new()
-        {
-            IncludeFields = true,
-            PropertyNameCaseInsensitive = true,
-            WriteIndented = false,
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        };
-
-        string jsonPath = Path.Combine(Environment.CurrentDirectory, "products.json");
-        using (FileStream  jsonstream = File.Create(jsonPath))
-        {
-            Newtonsoft.Json.JsonSerializer jss = new();
-            fastJson.Serialize(jsonstream, cate, options);
-            serializedData= jsonstream.ToString()!;
-        }
-
-    }
+   
 
      return serializedData;
 

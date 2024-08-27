@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization; // TO use [Column]
-using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute;
+//using System.Text.Json.Serialization; // TO use [Column], {[JsonIgnore]
+using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute; // To use [jsonIgnore] attribute
+
 
 namespace Northwind.EntityModels;
 public class Category

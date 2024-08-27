@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ch10ExDataSerialization")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0562e198c643e8a0ebd10583a75061667ef2c8a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ba357b32810af5ce9fa621650b364ab64371a65")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ch10ExDataSerialization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ch10ExDataSerialization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
