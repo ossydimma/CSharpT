@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\bin\Debug\net8.0\LinqWithObject.exe
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\bin\Debug\net8.0\LinqWithObject.deps.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\bin\Debug\net8.0\LinqWithObject.runtimeconfig.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\bin\Debug\net8.0\LinqWithObject.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\bin\Debug\net8.0\LinqWithObject.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.AssemblyInfo.cs
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.sourcelink.json
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\refint\LinqWithObject.dll
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.pdb
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\LinqWithObject.genruntimeconfig.cache
+C:\Users\user\Desktop\DotNet_Projects\CSharpTutorials\Chapter11\LinqWithObject\obj\Debug\net8.0\ref\LinqWithObject.dll
