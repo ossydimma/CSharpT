@@ -5,6 +5,8 @@ string[] names = { "Michael", "Pam", "Jim", "Dwight",
 
 //DeferredExecution(names);
 
-FilteringUsingWhere(names);
+//FilteringUsingWhere(names);
+FilteringByType();
+
 
 

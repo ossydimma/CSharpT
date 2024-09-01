@@ -34,9 +34,10 @@
         //var query = names.Where(NameLongerThanFour);
 
         // Using lambda experssion instead of a named method
-        var query = names
+        IOrderedEnumerable<string> query = names
             .Where(name => name.Length > 4)
-            .OrderBy(name => name.Length) ;
+            .OrderBy(name => name.Length) 
+            .ThenBy(name => name);
 
         foreach (string item in query)
         {
@@ -44,10 +45,27 @@
         }
     }
 
-    static bool NameLongerThanFour(string name)
+    static void FilteringByType()
     {
-        //return true for a name longer than four
-        return name.Length > 4;
+        SectionTitle("Filtering by type");
+        List<Exception> exceptions = new()
+        {
+            new ArgumentException(), new SystemException(),
+            new IndexOutOfRangeException(), new InvalidOperationException(),
+            new NullReferenceException(), new InvalidCastException(),
+            new OverflowException(), new DivideByZeroException(),
+            new ApplicationException()
+        };
+
+        IEnumerable<ArithmeticException> arithmeticExceptionsQuery = exceptions
+            .OfType<ArithmeticException>();
+
+        foreach(ArithmeticException e  in arithmeticExceptionsQuery)
+        {
+            WriteLine(e);
+        }
+
+
     }
 }
 
