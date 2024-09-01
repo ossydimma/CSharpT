@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithObject", "LinqWithObject\LinqWithObject.csproj", "{FCFB94E8-8232-461B-A745-9CD042A51EED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqWithObject", "LinqWithObject\LinqWithObject.csproj", "{FCFB94E8-8232-461B-A745-9CD042A51EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithEfCore", "LinqWithEfCore\LinqWithEfCore.csproj", "{B2E2ACB5-096D-496C-B63C-32F87B01BBF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FCFB94E8-8232-461B-A745-9CD042A51EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCFB94E8-8232-461B-A745-9CD042A51EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCFB94E8-8232-461B-A745-9CD042A51EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E2ACB5-096D-496C-B63C-32F87B01BBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E2ACB5-096D-496C-B63C-32F87B01BBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E2ACB5-096D-496C-B63C-32F87B01BBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E2ACB5-096D-496C-B63C-32F87B01BBF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
