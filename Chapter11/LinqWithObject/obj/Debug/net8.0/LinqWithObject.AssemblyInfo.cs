@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinqWithObject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8e3b85a0172174f09f37b3f59b016eb7f51d07d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff93703c52fe5bf6ecc1d6d12e68fa943254811f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinqWithObject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinqWithObject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
