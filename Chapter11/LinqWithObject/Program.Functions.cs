@@ -34,7 +34,9 @@
         //var query = names.Where(NameLongerThanFour);
 
         // Using lambda experssion instead of a named method
-        var query = names.Where(name => name.Length > 4);
+        var query = names
+            .Where(name => name.Length > 4)
+            .OrderBy(name => name.Length) ;
 
         foreach (string item in query)
         {
