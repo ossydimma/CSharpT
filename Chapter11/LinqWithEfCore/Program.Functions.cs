@@ -59,5 +59,34 @@ partial class Program
         }
     }
 
+    private static void GroupJoinCategoriesAndProducts()
+    {
+
+        SectionTitle("Group Join categories and products");
+
+        using NorthwindDb db = new();
+
+        var queryGroupJoin = db.Categories.AsEnumerable().GroupJoin(
+            inner: db.Products,
+            outerKeySelector: c => c.CategoryId,
+            innerKeySelector: p => p.CategoryId,
+            resultSelector: (c, matchingProducts) => new
+            {
+                c.CategoryName,
+                products = matchingProducts.OrderBy(p => p.ProductName)
+            });
+
+        foreach(var c in queryGroupJoin)
+        {
+            WriteLine($"{c.CategoryName} has {c.products.Count()} Products");
+
+            foreach(var p in c.products)
+            {
+                WriteLine(p.ProductName);
+            }
+        }
+
+    }
+
 }
 
