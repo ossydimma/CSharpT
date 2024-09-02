@@ -39,5 +39,25 @@ partial class Program
         WriteLine();
     }
 
+    private static void JoinCategoriesAndProducts()
+    {
+        SectionTitle("Join categories and products");
+
+        using NorthwindDb db = new();
+
+        var queryJoin = db.Categories.Join(
+          inner: db.Products,
+          outerKeySelector: category => category.CategoryId,
+          innerKeySelector: product => product.CategoryId,
+          resultSelector: (c, p) =>
+          new { c.CategoryName, p.ProductName, p.ProductId })
+            .OrderBy(cp => cp.CategoryName);
+
+        foreach(var p in queryJoin)
+        {
+            WriteLine($"{p.ProductId}: {p.ProductName} in {p.CategoryName}");
+        }
+    }
+
 }
 
