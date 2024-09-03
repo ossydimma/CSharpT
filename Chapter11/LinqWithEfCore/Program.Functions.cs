@@ -176,5 +176,72 @@ partial class Program
 
     }
 
+    private static void OutputTablesOfProducts(Product[] products, int currentPage, int totalPages)
+    {
+        string line = new('-', count: 73);
+        string lineHalf = new('-', count: 30);
+
+        WriteLine(line);
+        WriteLine("{0,4} {1,-40} {2,12} {3,-15}",
+             "ID", "Product Name", "Unit Price", "Discontinued");
+        WriteLine(line);
+
+        foreach(Product p in  products)
+        {
+            WriteLine("{0,4} {1,-40} {2,12} {3,-15}",
+                p.ProductId, p.ProductName, p.UnitPrice, p.Discontinued);
+        }
+
+        WriteLine("{0} page {1} of {2} {3}",
+            lineHalf, currentPage + 1, totalPages + 1, lineHalf );
+
+    }
+
+    private static void OutputPageOfProducts(IQueryable<Product> products, int pageSize, int currentPage, int totalPages)
+    {
+        var pagingQery = products
+            .OrderBy(p => p.ProductId)
+            .Skip(currentPage * pageSize)
+            .Take(pageSize);
+
+        Clear();
+
+        SectionTitle(pagingQery.ToQueryString());
+
+        OutputTablesOfProducts(pagingQery.ToArray(), currentPage, totalPages);
+    }
+
+
+    private static void PagingProducts()
+    {
+        SectionTitle("Paging products");
+
+        using NorthwindDb db = new();
+
+        int pageSize = 10;
+        int currentPage = 0;
+        int productCount = db.Products.Count();
+        int totalPages = productCount / pageSize;
+
+        while (true) // Use break to escape this infinite loop.
+        {
+            OutputPageOfProducts(db.Products, pageSize, currentPage, totalPages);
+
+            Write("Press <- to page back, press -> to page forward, any key to exit.");
+           
+            ConsoleKey key = ReadKey().Key;
+
+            if (key == ConsoleKey.LeftArrow)
+                currentPage = currentPage == 0 ? totalPages : currentPage - 1;
+            else if (key == ConsoleKey.RightArrow)
+                currentPage = currentPage == totalPages ? 0 : currentPage + 1;
+            else
+                break; // Break out of the while loop.
+            WriteLine();
+        }
+    }
+
+
+
 }
 
