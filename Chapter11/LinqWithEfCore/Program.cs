@@ -4,4 +4,5 @@
 //GroupJoinCategoriesAndProducts();
 //ProductsLookup();
 //AggregateProducts();
-PagingProducts();
+//PagingProducts();
+CustomersLookup();

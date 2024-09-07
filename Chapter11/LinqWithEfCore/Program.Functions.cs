@@ -241,6 +241,49 @@ partial class Program
         }
     }
 
+    private static void CustomersLookup ()
+    {
+        SectionTitle("Customer in a Specific city");
+
+        using NorthwindDb db = new();
+
+        // Display Cities that customers reside
+        var cities = db.Customers.Select(c => c.City)
+            .Distinct()
+            .OrderBy(c => c);
+
+        WriteLine("Here are cities that our customers reside:");
+
+        foreach(var city in cities )
+        {
+            Write($"{city}, ");
+        }
+        WriteLine();
+
+        // requesting user to enter a city.
+        Write("Enter a city name: ");
+        string InputedCity = ReadLine()!;
+        WriteLine();
+
+        // Displaying companies in the enter city
+        var companiesInCity = db.Customers.AsEnumerable()
+            .Where(c => c.City.Equals(InputedCity, StringComparison.OrdinalIgnoreCase))
+            .OrderBy(c => c.CompanyName)
+            .Select(c => c.CompanyName);
+
+        if(companiesInCity is null || !companiesInCity.Any() )
+        {
+            WriteLine($"{InputedCity} not Found");
+            return;
+        }
+
+        WriteLine($"There are {companiesInCity.Count()} customer(s) in {InputedCity} ");
+
+        foreach ( var company in companiesInCity)
+        {
+            WriteLine(company);
+        }
+    }
 
 
 }
