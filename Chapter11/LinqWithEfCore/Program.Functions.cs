@@ -241,7 +241,7 @@ partial class Program
         }
     }
 
-    private static void CustomersLookup ()
+    private static void CustomersLookup()
     {
         SectionTitle("Customer in a Specific city");
 
