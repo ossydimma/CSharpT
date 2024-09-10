@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.EntityModels.Sqlite", "Northwind.EntityModels.Sqlite\Northwind.EntityModels.Sqlite.csproj", "{970B98FF-37BB-46A4-95C6-9E414E3C621F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.EntityModels.Sqlite", "Northwind.EntityModels.Sqlite\Northwind.EntityModels.Sqlite.csproj", "{970B98FF-37BB-46A4-95C6-9E414E3C621F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.DataContext.Sqlite", "Northwind.DataContext.Sqlite\Northwind.DataContext.Sqlite.csproj", "{5B820CBC-3DB5-429D-9D47-2AD6F3569538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.UnitTests", "Northwind.UnitTests\Northwind.UnitTests.csproj", "{D917EA62-E15D-4401-92E3-D915209E10D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{970B98FF-37BB-46A4-95C6-9E414E3C621F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970B98FF-37BB-46A4-95C6-9E414E3C621F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970B98FF-37BB-46A4-95C6-9E414E3C621F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B820CBC-3DB5-429D-9D47-2AD6F3569538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B820CBC-3DB5-429D-9D47-2AD6F3569538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B820CBC-3DB5-429D-9D47-2AD6F3569538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B820CBC-3DB5-429D-9D47-2AD6F3569538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D917EA62-E15D-4401-92E3-D915209E10D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D917EA62-E15D-4401-92E3-D915209E10D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D917EA62-E15D-4401-92E3-D915209E10D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D917EA62-E15D-4401-92E3-D915209E10D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
