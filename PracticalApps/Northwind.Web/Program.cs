@@ -1,8 +1,15 @@
+
+#region Configure the web server hosts and services
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddRazorPages();
+
 var app = builder.Build();
+
+#endregion
 #region Configure the HTTP pipleline and routes
 
-if(!app.Environment.IsDevelopment())
+if (!app.Environment.IsDevelopment())
 {
     app.UseHsts();
 }
@@ -12,6 +19,7 @@ app.UseHttpsRedirection();
 app.UseDefaultFiles(); // index.html, default.html, and so on.
 app.UseStaticFiles();
 
+app.MapRazorPages();
 app.MapGet("/hello", () => $"Environment is {app.Environment.EnvironmentName}");
 
 #endregion
