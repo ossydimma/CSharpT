@@ -5,9 +5,29 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Orders.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.DataContext.Sqlite\Northwind.DataContext.Sqlite.csproj" />
+  </ItemGroup>
 	
   <ItemGroup>
 	  <Using Include="System.Console" Static="true" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Orders.cshtml" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Orders.cshtml" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Include="Pages\Orders.cshtml" />
   </ItemGroup>
 
 </Project>
