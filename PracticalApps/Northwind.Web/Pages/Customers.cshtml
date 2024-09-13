@@ -1,0 +1,35 @@
+﻿@page
+@using Northwind.EntityModels
+@model Northwind.Web.Pages.CustomersModel
+<div class="row">
+    <h1 class="display-2">@ViewData["Title"]</h1>
+
+    <div class="accordion" id="accordionCustomers">
+        @if(Model.CustomersByCountry is not null) 
+        {
+            @foreach(IGrouping<string?, Customer> cb in Model.CustomersByCountry) 
+            {
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="header@(cb.Key)">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse@(cb.Key)" aria-expanded="true" aria-controls="collapse@(cb.Key)">
+                            @cb.Key has @cb.Count() customers
+                        </button>
+                    </h2>
+
+                    <div id="collapse@(cb.Key)" class="accordion-collapse collapse" aria-labelledby="heading@(cb.Key)" data-bs-parent="#accordionCustomers">
+                        <div class="accordion-body"> 
+                            <ul>
+                                @foreach(Customer c in cb) 
+                                {
+                                    <li> <a href="customerorders?1d=@c.CustomerId"> @c.CompanyName </a> </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        }
+    </div>
+</div>
+
