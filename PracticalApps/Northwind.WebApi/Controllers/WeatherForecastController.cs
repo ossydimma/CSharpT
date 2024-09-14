@@ -22,7 +22,7 @@ namespace Northwind.WebApi.Controllers
         [HttpGet(Name = "GetWeatherForecastFiveDays")]
         public IEnumerable<WeatherForecast> Get()
         {
-            return Get(days: 5);  // Five - Days forecast
+            return Get(days: 5);  // Five-Days forecast
         }
 
         // GET /weatherforecast/7
@@ -37,27 +37,6 @@ namespace Northwind.WebApi.Controllers
             })
             .ToArray();
         }
-
-        //// GET /weatherforecast
-        //[HttpGet(Name = "GetWeatherForecastFiveDays")]
-        //public IEnumerable<WeatherForecast> Get()
-        //{
-        //    return Get(days: 5); // Five-day forecast.
-        //}
-
-        //// GET /weatherforecast/7
-        //[HttpGet(template: "{days:int}", Name = "GetWeatherForecast")]
-        //public IEnumerable<WeatherForecast> Get(int days)
-        //{
-        //    return Enumerable.Range(1, days).Select(index => new WeatherForecast
-        //    {
-        //     Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-        //     TemperatureC = Random.Shared.Next(-20, 55),
-        //     Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        //    })
-
-        //     .ToArray();
-        //}
 
     }
 }
