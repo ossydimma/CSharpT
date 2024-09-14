@@ -7,6 +7,7 @@ namespace Northwind.Web.Pages;
 public class CustomerOrdersModel : PageModel
 {
     public Customer? Customer;
+    public IList<Order>? Orders {  get; set; }
 
     private NorthwindContext _db;
 
@@ -20,7 +21,22 @@ public class CustomerOrdersModel : PageModel
         ViewData["Title"] = "Northwind B2B - Customers and their orders";
         string? id = HttpContext.Request.Query["id"];
 
-        Customer = _db.Customers.Include(c => c.Orders)
-          .SingleOrDefault(c => c.CustomerId == id);
+        Customer = _db.Customers
+          .FirstOrDefault(c => c.CustomerId == id);
+
+        if (Customer is null)
+        {
+            Console.WriteLine("no orders found");
+            return;
+        }
+
+        Orders = _db.Orders
+           .Where(o => o.CustomerId == Customer.CustomerId)
+           .ToList(); 
+
+        foreach (Order o in Customer.Orders)
+        {
+            Console.WriteLine($"{o.OrderId} was ordered on {o.OrderDate}");
+        }
     }
 }
