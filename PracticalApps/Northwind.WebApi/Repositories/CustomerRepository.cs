@@ -1,6 +1,102 @@
-﻿namespace Northwind.WebApi.Repositories
+﻿using Northwind.EntityModels; // To use Customer
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore; // To use IMemoryCache
+namespace Northwind.WebApi.Repositories;
+public class CustomerRepository : ICustomerRepository
 {
-    public class CustomerRepository
+    private readonly IMemoryCache _memoryCache;
+
+    private readonly MemoryCacheEntryOptions _cacheEntryOptions = new ()
     {
+        SlidingExpiration = TimeSpan.FromMinutes(30)
+    };
+
+    // Use an instance data context field because it should not be
+    // cached due to the data context having internal caching.
+
+    private NorthwindContext _db;
+
+    public CustomerRepository (NorthwindContext db, IMemoryCache memoryCache)
+    {
+        _db = db;
+        _memoryCache = memoryCache;
     }
+
+    public async Task<Customer?> CreateAsync(Customer c)
+    {
+        c.CustomerId = c.CustomerId.ToUpper(); // Normalize to Uppercase
+
+        // Add to database using Ef Core
+        EntityEntry<Customer> added = await _db.Customers.AddAsync(c);
+        int affected = await _db.SaveChangesAsync();
+
+        if (affected == 1) 
+        { 
+            //if saved to database then store to cache
+            _memoryCache.Set(c.CustomerId, c, _cacheEntryOptions);
+            return c;
+        }
+
+        return null;
+    }
+
+    public  Task<Customer[]> RetrieveAllAsync()
+    {
+        return _db.Customers.ToArrayAsync();
+    }
+
+    public Task<Customer?> RetrieveAsync(string id)
+    {
+        id = id.ToUpper(); // Normalize to uppercase
+
+        // Try to get from the cache first
+        if(_memoryCache.TryGetValue(id, out Customer? fromCache))
+            return Task.FromResult(fromCache);
+
+        // If not in the cache, then try to get it from the database.
+        Customer? fromDb = _db.Customers.FirstOrDefault(c => c.CustomerId == id);
+
+        //if not in database then return null
+        if (fromDb is null) return Task.FromResult(fromDb);
+
+        //if in database base store in cache and return customer
+        _memoryCache.Set(fromDb.CustomerId, fromDb, _cacheEntryOptions);
+
+        return Task.FromResult(fromDb)!;
+
+    }
+
+    public async Task<Customer?> UpdateAsync (Customer c)
+    {
+        c.CustomerId = c.CustomerId.ToUpper();
+
+        _db.Customers.Update(c);
+        int affected = await _db.SaveChangesAsync();
+
+        if (affected == 1)
+        {
+            _memoryCache.Set(c.CustomerId, c, _cacheEntryOptions);
+            return c;
+        }
+        return null;
+    }
+
+    public async Task<bool?> DeleteAsync(string id)
+    {
+        id = id.ToUpper();
+
+        Customer? c = await _db.Customers.FindAsync(id);
+        if (c is null) return null;
+            
+        _db.Customers.Remove(c);
+        int affected = await _db.SaveChangesAsync();
+        if (affected == 1)
+        {
+            _memoryCache.Remove(c.CustomerId);
+            return true;
+        }
+        return null;
+    }
+
 }
