@@ -1,0 +1,21 @@
+### configiure variable for the web service base address
+@base_address = https://localhost:5151/api/customers/
+
+### make a put request to the base address
+PUT {{base_address}}abcxy
+Content-Type: aplication/json
+
+{
+   "customerID": "ABCXY",
+   "companyName": "ABC Corp",
+   "contactName": "Jonny Smith",
+   "contactTitle": "Sir",
+   "address": "Main Street",
+   "city": "New York",
+   "region": "NY",
+   "postalCode": "90210",
+   "country": "USA",
+   "phone": "(123) 555-5678"
+}
+
+

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Serialization; // To use [xmlIgnore] attribute
 using Microsoft.EntityFrameworkCore;
 
 namespace Northwind.EntityModels;
@@ -60,5 +61,6 @@ public partial class Customer
     public string? Fax { get; set; }
 
     [InverseProperty("Customer")]
+    [XmlIgnore]
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

@@ -1,13 +1,22 @@
 using Microsoft.AspNetCore.Mvc.Formatters; // To use IOutputFormatter
 using Microsoft.Extensions.Caching.Memory; // to use IMemoryCache and so on
 using Northwind.EntityModels; //To use NorthwindContext
-using Northwind.WebApi.Repositories; // To use ICustomerRepository and CustomerRespository
+using Northwind.WebApi.Repositories;// To use ICustomerRepository and CustomerRespository
+using Swashbuckle.AspNetCore.SwaggerUI;
+using Microsoft.AspNetCore.HttpLogging; // To use HttpLoggingField
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddSingleton<IMemoryCache>(new MemoryCache(new MemoryCacheOptions()));
+builder.Services.AddHttpLogging(options =>
+{
+    options.LoggingFields = HttpLoggingFields.All;
+    options.RequestBodyLogLimit = 4096; // default is 3k
+    options.ResponseBodyLogLimit = 4096; // Default is 3k
+
+});
 builder.Services.AddControllers(options =>
 {
     WriteLine("Default output formatters");
@@ -40,8 +49,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Northwind Service API Version 1");
+        c.SupportedSubmitMethods([SubmitMethod.Get, SubmitMethod.Put, SubmitMethod.Post, SubmitMethod.Delete]);
+    });
 }
+
+app.UseHttpLogging();
 
 app.UseHttpsRedirection();
 
