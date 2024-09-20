@@ -61,8 +61,8 @@ app.UseOutputCache();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-  .CacheOutput(policyName: "views");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+  //.CacheOutput(policyName: "views");  //disable to avoid confusion
 
 app.MapRazorPages();
 
