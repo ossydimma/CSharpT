@@ -56,6 +56,23 @@ namespace Northwind.Mvc.Controllers
             return View(model); // Pass model to view and then return result.
         }
 
+        public async Task<IActionResult> CategoryDetail(int? id)
+        {
+            if (!id.HasValue)
+            {
+                return BadRequest("You must pass a category ID in the route, for example, /Home/CategoryDetail/6");
+            }
+
+            Category? model = await _db.Categories.Include(c => c.Products)
+                .SingleOrDefaultAsync(c => c.CategoryId == id);
+            if (model is null)
+            {
+                return NotFound($"CategoryId {id} not found");
+            }
+
+            return View(model); 
+        }
+
         public IActionResult ProductsThatCostMoreThan(decimal? price)
         {
             if(!price.HasValue)
