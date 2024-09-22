@@ -3,6 +3,7 @@ using Northwind.Mvc.Models;
 using System.Diagnostics;
 using Northwind.EntityModels; // To use NorthwindContext
 using Microsoft.EntityFrameworkCore; // To use Include method.
+using Microsoft.AspNetCore.Authorization; // To use [Authorize]
 
 namespace Northwind.Mvc.Controllers
 {
@@ -17,13 +18,13 @@ namespace Northwind.Mvc.Controllers
             _db = db;
         }
         [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any)]
-        public IActionResult Index() 
+        public async Task<IActionResult> Index() 
         {
             HomeIndexViewModel model = new
             (
                 VisitorCount: Random.Shared.Next(1, 1000),
-                Categories: _db.Categories.ToList(),
-                Products: _db.Products.ToList()
+                Categories: await _db.Categories.ToListAsync(),
+                Products: await _db.Products.ToListAsync()
             );
 
 
@@ -35,7 +36,7 @@ namespace Northwind.Mvc.Controllers
             return View(model);
         }
 
-        public IActionResult ProductDetail(int? id, string alertStyle = "success")
+        public async Task<IActionResult> ProductDetail(int? id, string alertStyle = "success")
         {
             ViewData["alertstyle"] = alertStyle;
 
@@ -44,8 +45,8 @@ namespace Northwind.Mvc.Controllers
                 return BadRequest("You must pass a product ID in the route, for example, /Home/ProductDetail/21");
             }
 
-            Product? model = _db.Products.Include(p => p.Category)
-                .SingleOrDefault(p => p.ProductId == id);
+            Product? model = await _db.Products.Include(p => p.Category)
+                .SingleOrDefaultAsync(p => p.ProductId == id);
 
             if(model == null)
             {
@@ -98,6 +99,7 @@ namespace Northwind.Mvc.Controllers
         }
 
         [Route("private")]
+        [Authorize(Roles = "Administrators")]
         public IActionResult Privacy()
         {
             return View();
