@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MLGZf4pPCGiAURY7fm7kj5cZcx4Ah/Y1qmoZ7J3a/cpzyvr8oNHIQv3pQbgNf2v6naArG5FOrD5UuTfsf9Fh8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\PracticalApps\\Northwind.MinimalApi\\Northwind.MinimalApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.2\\microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.2\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

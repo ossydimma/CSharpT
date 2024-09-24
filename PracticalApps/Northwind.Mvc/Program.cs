@@ -26,6 +26,13 @@ builder.Services.AddHttpClient(name: "Northwind.WebApi",
         options.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType: "application/json", quality: 1.0));
     });
 
+builder.Services.AddHttpClient(name: "Northwind.MinimalApi",
+    configureClient: options =>
+    {
+        options.BaseAddress = new Uri("http://localhost:5152");
+        options.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType: "application/json", quality: 1.0));
+    });
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>

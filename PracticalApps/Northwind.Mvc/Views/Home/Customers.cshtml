@@ -1,5 +1,16 @@
 ﻿@using Northwind.EntityModels
 @model IEnumerable<Customer>
+@if (TempData["error-message"] is not null)
+{
+    <p class="alert alert-danger">Error! @TempData["error-message"]</p>
+}
+@if (TempData["success-message"] is not null)
+{
+    <p class="alert alert-success">Congratulation! @TempData["success-message"]</p>
+}
+
+<a asp-controller="Home" asp-action="AddCustomer" class=" btn btn-outline-primary" >Add Customer</a>
+
 <h2>@ViewData["Title"]</h2>
 ,<table>
     <tr>
@@ -30,6 +41,12 @@
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => c.Phone)
+                    </td>
+                    <td>
+                        <a asp-controller="Home"
+                           asp-action="DeleteCustomer"
+                           asp-route-customerid="@c.CustomerId"
+                           class="btn btn-outline-danger">Delete</a>
                     </td>
                 </tr>
             }

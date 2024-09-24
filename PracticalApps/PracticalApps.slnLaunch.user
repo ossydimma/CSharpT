@@ -3,14 +3,13 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Name": "Northwind.WebApi\\Northwind.WebApi.csproj",
+        "Name": "Northwind.Mvc\\Northwind.Mvc.csproj",
         "Action": "StartWithoutDebugging",
         "DebugTarget": ""
       },
       {
-        "Name": "Northwind.Mvc\\Northwind.Mvc.csproj",
-        "Action": "StartWithoutDebugging",
-        "DebugTarget": ""
+        "Name": "Northwind.MinimalApi\\Northwind.MinimalApi.csproj",
+        "Action": "StartWithoutDebugging"
       }
     ]
   }

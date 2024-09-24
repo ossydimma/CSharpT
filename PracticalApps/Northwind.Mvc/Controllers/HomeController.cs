@@ -29,6 +29,22 @@ namespace Northwind.Mvc.Controllers
                 Products: await _db.Products.ToListAsync()
             );
 
+            try
+            {
+                HttpClient client = _ClientFactory.CreateClient(name: "Northwind.MinimalApi");
+
+                HttpRequestMessage request = new(method: HttpMethod.Get, requestUri: "todos");
+                HttpResponseMessage response = await client.SendAsync(request);
+
+                ViewData["todos"] = await response.Content.ReadFromJsonAsync<ToDo[]>();
+            }
+            catch(Exception ex)
+            {
+                _logger.LogWarning($"The Minimal.WebApi service is not responding. Exception: {ex.Message}");
+
+                ViewData["todos"] = Enumerable.Empty<ToDo>().ToArray();
+            }
+
 
             _logger.LogError("This is a serious error! (not reallu)");
             _logger.LogWarning("This the first warning!");
@@ -142,6 +158,77 @@ namespace Northwind.Mvc.Controllers
 
             return View(model); // show the model bound thing
         }
+        // GET /Home/AddCustomer
+        public IActionResult AddCustomer()
+        {
+            ViewData["Title"] = "Add Customer";
+            return View();
+
+        }
+
+        // POST /Home/AddCustomer
+        // A Customer object in the request body.
+        [HttpPost]
+        public async Task<IActionResult> AddCustomer(Customer customer)
+        {
+
+            HttpClient client = _ClientFactory.CreateClient(name: "Northwind.WebApi");
+
+            HttpResponseMessage response = await client.PostAsJsonAsync(requestUri: "api/customers", value: customer);
+
+            Customer? model = await response.Content
+                .ReadFromJsonAsync<Customer>();
+
+            if (response.IsSuccessStatusCode)
+            {
+                TempData["success-message"] = "Customer successfully added.";
+            }
+            else
+            {
+                TempData["error-message"] = "Customer was NOT added.";
+            }
+
+            // Show the full customers list to see if it was added.
+            return RedirectToAction("customer");
+        }
+        //Get Home/DeleteCustomer/{customerId}
+        public async Task<IActionResult> DeleteCustomer(string customerId)
+        {
+            HttpClient client = _ClientFactory.CreateClient(name: "Northwind.WebApi");
+
+            Customer? customer = await client.GetFromJsonAsync<Customer>(requestUri: $"api/customers/{customerId}");
+
+            ViewData["Title"] = "Delete Customer";
+
+            return View(customer);
+        }
+
+        // POST /Home/DeleteCustomer
+        // A CustomerId in the request body e.g. ALFKI.
+        [HttpPost]
+        [Route("home/deletecustomer")]
+        // Action method name must have a different name from the GET method
+        // due to C# not allowing duplicate method signatures.
+        public async Task<IActionResult> DeleteCustomerPost(string customerId)
+        {
+            HttpClient client = _ClientFactory.CreateClient(name: "Northwind.WebApi");
+
+            HttpResponseMessage respone = await client.DeleteAsync(requestUri: $"api/customers/{customerId}");
+
+            if (respone.IsSuccessStatusCode)
+            {
+                TempData["sucess-message"] = "Customer successfully deleted.";
+            }
+            else
+            {
+                TempData["error-message"] = $"Customer {customerId} was not deleted.";       
+            }
+
+            // Show the full customers list to see if it was deleted.
+            return RedirectToAction("Customers");
+        }
+
+
 
         [Route("private")]
         [Authorize(Roles = "Administrators")]
