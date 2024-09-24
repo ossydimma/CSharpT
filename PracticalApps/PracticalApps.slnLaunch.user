@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "Northwind.WebApi\\Northwind.WebApi.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "Northwind.Mvc\\Northwind.Mvc.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": ""
+      }
+    ]
+  }
+]

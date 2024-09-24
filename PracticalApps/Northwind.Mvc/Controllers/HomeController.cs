@@ -11,11 +11,13 @@ namespace Northwind.Mvc.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly NorthwindContext _db;
+        private readonly IHttpClientFactory _ClientFactory;
 
-        public HomeController(ILogger<HomeController> logger, NorthwindContext db)
+        public HomeController(ILogger<HomeController> logger, NorthwindContext db, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
             _db = db;
+            _ClientFactory = httpClientFactory;
         }
         [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any)]
         public async Task<IActionResult> Index() 
@@ -71,6 +73,32 @@ namespace Northwind.Mvc.Controllers
             }
 
             return View(model); 
+        }
+
+        public async Task<IActionResult> Customers(string? country)
+        {
+            string uri;
+
+            if(string.IsNullOrEmpty(country))
+            {
+                uri = "api/customers";
+                ViewData["Title"] = "All Customers worldwide";
+            }
+            else
+            {
+                uri = $"api/customers/?country={country}";
+                ViewData["Title"] = $"Customers in {country}";
+            }
+
+            HttpClient client = _ClientFactory.CreateClient(name: "Northwind.WebApi");
+
+            HttpRequestMessage request = new(method: HttpMethod.Get, requestUri: uri);
+            HttpResponseMessage response = await client.SendAsync(request);
+
+            IEnumerable<Customer>? model = await response.Content.ReadFromJsonAsync<IEnumerable<Customer>>();
+
+            return View(model);
+
         }
 
         public IActionResult ProductsThatCostMoreThan(decimal? price)
