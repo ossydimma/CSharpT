@@ -7,12 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Components\CustomerDetail.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Northwind.Blazor.Services\Northwind.Blazor.Services.csproj" />
     <ProjectReference Include="..\Northwind.DataContext.Sqlite\Northwind.DataContext.Sqlite.csproj" />
   </ItemGroup>
 
 	<ItemGroup>
 		<Using Include="Northwind.EntityModels" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Components\CustomerDetail.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="Components\CustomerDetail.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Components\CustomerDetail.razor" />
 	</ItemGroup>
 
 
