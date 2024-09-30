@@ -1,0 +1,27 @@
+﻿@page "/timestable/{Number:int}/{Size:int?}"
+
+<h3 >@Number TimesTable</h3>
+<div class="mt-10 container">
+    <table class="row" >
+        @for (int i = 1; i <= Size; i++)
+        {
+            <tr class="col">
+                <td>@string.Format($"{Number} * {i} = {Number * i}")</td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+
+<div>
+
+</div>
+@code{
+
+   [Parameter]
+    public int Number { get; set; }
+
+    [Parameter]
+    public int? Size { get; set; } = 12;
+}

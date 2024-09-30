@@ -5,6 +5,8 @@ using Northwind.WebApi.Repositories;// To use ICustomerRepository and CustomerRe
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Microsoft.AspNetCore.HttpLogging; // To use HttpLoggingField
 
+const string corsPolicyName = "allowWasmClient";
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -38,6 +40,17 @@ builder.Services.AddControllers(options =>
 }).AddXmlDataContractSerializerFormatters()
 .AddXmlSerializerFormatters();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: corsPolicyName,
+        policy =>
+    {
+        policy.AllowAnyHeader();
+        policy.WithOrigins("https://localhost:5161",
+        "http://localhost:5160");
+    });
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -59,6 +72,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpLogging();
 
 app.UseHttpsRedirection();
+
+app.UseCors(corsPolicyName);
 
 app.UseAuthorization();
 

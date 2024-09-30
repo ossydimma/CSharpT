@@ -1,54 +1,72 @@
-﻿<EditForm Model="@Customer" OnValidSubmit="@OnValidSubmit">
-     <DataAnnotationsValidator />
-     <div class="form-group">
-         <div>
-             <label>Customer Id</label>
-             <div>
-                 <InputText @bind-Value="@Customer.CustomerId" />
-                 <ValidationMessage For="@(() => Customer.CustomerId)" />
-             </div>
-         </div>
-     </div>
-    <div class="form-group ">
+﻿﻿<EditForm Model="@Customer" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div>
+        <label class="form-label">Customer Id</label>
         <div>
-            <label>Company Name</label>
-            <div>
-                <InputText @bind-Value="@Customer.CompanyName" />
-                <ValidationMessage For="@(() => Customer.CompanyName)" />
-            </div>
+            <InputText class="form-control" @bind-Value="@Customer.CustomerId" @oninput="OnInputCustomerId" />
+            <ValidationMessage For="@(() => Customer.CustomerId)" />
         </div>
     </div>
-    <div class="form-group ">
+    <div>
+        <label class="form-label">Company Name</label>
         <div>
-            <label>Country</label>
-            <div>
-                <InputText @bind-Value="@Customer.Address" />
-                <ValidationMessage For="@(() => Customer.Address)" />
-            </div>
+            <InputText class="form-control" @bind-Value="@Customer.CompanyName" @oninput="OnInputCompanyName" />
+            <ValidationMessage For="@(() => Customer.CompanyName)" />
         </div>
     </div>
-    <div class="form-group ">
+    <div>
+        <label class="form-label">Address</label>
         <div>
-            <label>Country</label>
-            <div>
-                <InputText @bind-Value="@Customer.Country" />
-                <ValidationMessage For="@(() => Customer.Country)" />
-            </div>
+            <InputText class="form-control" @bind-Value="@Customer.Address" @oninput="OnInputAddress" />
+            <ValidationMessage For="@(() => Customer.Address)" />
         </div>
     </div>
-    <button type="submit" class="btn btn-@ButtonStyle"> @ButtonText </button>
+    <div>
+        <label class="form-label">Country</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Customer.Country" @oninput="OnInputCountry" />
+            <ValidationMessage For="@(() => Customer.Country)" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-@ButtonStyle">
+        @ButtonText
+    </button>
 </EditForm>
-
 @code {
-    [parameter]
-    public Customer Customer { get; set;} = null!;
-
-    [parameter]
+    [Parameter]
+    public Customer Customer { get; set; } = null!;
+    [Parameter]
     public string ButtonText { get; set; } = "Save Changes";
+    [Parameter]
+    public string ButtonStyle { get; set; } = "info";
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
 
-    [parameter]
-    public string ButtonStyle { get; set; } = "Info";
+  [Parameter]
+    public bool HasChanges { get; set; } = false;
 
-    [parameter]
-    public EventCallBack OnValidSubmit { get; set; }
+    private void OnInputCustomerId(ChangeEventArgs args)
+    {
+        if (Customer.CustomerId != args.Value?.ToString()) HasChanges = true;
+    }
+
+    private void OnInputCompanyName(ChangeEventArgs args)
+    {
+        if (Customer.CompanyName != args.Value?.ToString()) HasChanges = true;
+    }
+
+    private void OnInputAddress(ChangeEventArgs args)
+    {
+        if (Customer.Address != args.Value?.ToString()) HasChanges = true;
+    }
+
+    private void OnInputCountry(ChangeEventArgs args)
+    {
+        if (Customer.Country != args.Value?.ToString()) HasChanges = true;
+    }
+
+    public void ClearChanges()
+    {
+        HasChanges = false;
+    }
 }

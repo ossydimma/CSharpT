@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Northwind.MinimalApi.props" />
+</Project>

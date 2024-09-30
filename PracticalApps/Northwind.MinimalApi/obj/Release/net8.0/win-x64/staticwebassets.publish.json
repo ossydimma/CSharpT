@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FWcyFm/K7Tly0VC1jm1NG+Rz2+CIcS6YPcioKnFV8s8=",
+  "Source": "Northwind.MinimalApi",
+  "BasePath": "_content/Northwind.MinimalApi",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

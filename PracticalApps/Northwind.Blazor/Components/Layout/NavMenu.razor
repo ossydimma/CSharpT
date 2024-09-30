@@ -1,4 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject INorthwindService _service
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Northwind.Blazor</a>
     </div>
@@ -22,15 +24,27 @@
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="customers">
-                <span class="bi bi-globe" aria-hidden="true"></span> Customers Worldwide
+                <span class="bi bi-globe" aria-hidden="true"></span> All Customers
             </NavLink>
         </div>
 
-        <div class="nav-item px-3">
+     @*    <div class="nav-item px-3">
             <NavLink class="nav-link" href="customers/Germany">
                 <span class="bi bi-globe-europe-africa" aria-hidden="true"></span> Customers in Germany
             </NavLink>
-        </div>
+        </div> *@
+
+        @foreach(string? country in _service.GetCountries())
+        {
+            string countryLink = "customers/" + country;
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="@countryLink">
+                    <span class="oi oi-people" aria-hidden="true"></span>
+                    Customers in @country
+                </NavLink>
+            </div>
+        }
     </nav>
 </div>
 

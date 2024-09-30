@@ -3,14 +3,9 @@ using Northwind.Blazor.Services;
 
 namespace Northwind.Blazor.Sevices;
 
-public class NorthwindServiceServerSide : INorthwindService
+public class NorthwindServiceServerSide(NorthwindContext db) : INorthwindService
 {
-    private readonly NorthwindContext _db;
-
-    public NorthwindServiceServerSide(NorthwindContext db)
-    {
-        _db = db;
-    }
+    private readonly NorthwindContext _db = db;
 
     public Task<List<Customer>> GetCustomersAsync()
     {
@@ -54,7 +49,11 @@ public class NorthwindServiceServerSide : INorthwindService
             _db.Customers.Remove(customer);
             return _db.SaveChangesAsync();
         }
+    }
 
-
+    public List<string?> GetCountries()
+    {
+        return[.. _db.Customers.Select(c => c.Country)
+            .Distinct().OrderBy(country => country)];
     }
 }

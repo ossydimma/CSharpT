@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\PracticalApps\\Northwind.Blazor.Wasm\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\DotNet_Projects\\CSharpTutorials\\PracticalApps\\Northwind.Blazor.Wasm\\obj\\Debug\\net8.0\\compressed\\xycu92z8sk.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Northwind.Blazor.Wasm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Northwind.Blazor.Wasm.props",
+      "PackagePath": "build\\Northwind.Blazor.Wasm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Northwind.Blazor.Wasm.props",
+      "PackagePath": "buildMultiTargeting\\Northwind.Blazor.Wasm.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Northwind.Blazor.Wasm.props",
+      "PackagePath": "buildTransitive\\Northwind.Blazor.Wasm.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

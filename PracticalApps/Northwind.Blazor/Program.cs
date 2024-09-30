@@ -1,17 +1,18 @@
 using Northwind.Blazor.Components;
-using Northwind.Blazor.Services; // To use INorthwindService.
-using Northwind.Blazor.Sevices;
-
+using Northwind.Blazor.Services;
+using Northwind.Blazor.Sevices; // To use INorthwindService.
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+  .AddInteractiveServerComponents()
+  .AddInteractiveWebAssemblyComponents();
 
 builder.Services.AddNorthwindContext();
-builder.Services.AddTransient<INorthwindService, NorthwindServiceServerSide>();
 
+builder.Services.AddTransient<INorthwindService,
+  NorthwindServiceServerSide>();
 
 var app = builder.Build();
 
@@ -29,6 +30,8 @@ app.UseStaticFiles();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+  .AddInteractiveServerRenderMode()
+  .AddInteractiveWebAssemblyRenderMode()
+  .AddAdditionalAssemblies(typeof(Northwind.Blazor.Wasm._Imports).Assembly);
 
 app.Run();
